@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"><br>
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 xxl-6">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name" name="name"[(ngModel)]="name">
+        
+                </div>
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 xxl-6">
+                    <label for="DOB">DOB</label>
+                     <input type="date" name="dob" id="" class="form-control" [(ngModel)]="dob">
+                </div>
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 xxl-6">
+                    <label for="Phone Number">Phone Number</label>
+                 <input type="text" class="form-control" placeholder="Enter your contact number" name="phoneNo"[(ngModel)]="phoneNo">
+                </div>
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 xxl-6">
+                    <label for="">Place</label>
+                    <input type="text" class="form-control" placeholder="Enter your place" name="place"[(ngModel)]="place" >
+        
+                </div>
+
+                
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+                     <label for="Email Id">Email Id</label>
+                     <input type="email" name="email" id="" class="form-control" placeholder="username@gmail.com" [(ngModel)]="email">
+                 </div>
+
+        
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 xxl-6">
+                    <label for="Password">Password</label>
+                 <input type="password" name="password" id="" class="form-control" [(ngModel)]="password">
+                 <div id="passwordHelpBlock" class="form-text">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                  </div>
+                </div>
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 xxl-6">
+                    <label for=" Confirm Password">Confirm Password</label>
+                 <input type="password" name="confirmPassword" id="" class="form-control" [(ngModel)]="confirmPassword">
+                 <div id="passwordHelpBlock" class="form-text">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                  </div>
+                </div>
+
+               
+
+                
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12"><br>
+            <a routerLink="/">
+                        
+            <button class="btn btn-success" (click)="readValues()">Sign up</button></a>
+            
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+
+            <a routerLink="/">back to Login </a>
+        </div>
+
+        </div>
+    </div>
+</div>
