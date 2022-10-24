@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 const appRoutes:Routes=[
   {
     path:"",component:LoginComponent
@@ -21,13 +23,15 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
